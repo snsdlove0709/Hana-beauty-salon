@@ -1,19 +1,121 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hana beauty salon</title>
-  <style>
-    body { font-family: 'Hiragino Sans', sans-serif; margin: 40px; text-align: center; background-color: #fffaf8; }
-    h1 { color: #d69898; }
-    p { color: #555; line-height: 1.8; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hana beauty salon | プライベートサロン</title>
+<meta name="description" content="Hana beauty salon｜REVI剥けないハーブピーリング／マツエク／ドライヘッドスパ。下北沢・世田谷代田から徒歩5分。予約はLINE・Instagramから。">
+<style>
+  :root{
+    --primary:#c9888f;      /* くすみピンク（メイン） */
+    --primary-ink:#b87980;  /* 見出し用に少し濃いめ */
+    --text:#222; --muted:#6b6b6b; --bg:#fff; --line:#eee;
+    --card:#fafafa; --radius:14px; --shadow:0 10px 30px rgba(0,0,0,.05);
+  }
+  *{box-sizing:border-box} html,body{margin:0;background:var(--bg);color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",Meiryo,system-ui,sans-serif; line-height:1.75}
+  a{text-decoration:none;color:inherit}
+  .wrap{max-width:1080px;margin:0 auto;padding:24px}
+  header{position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:saturate(180%) blur(8px);z-index:10;border-bottom:1px solid var(--line)}
+  .nav{max-width:1080px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;justify-content:space-between}
+  .brand{font-weight:800;letter-spacing:.03em}
+  .nav a{margin-left:14px;color:var(--muted);font-size:14px}
+  .nav a:hover{color:var(--primary-ink)}
+  .hero{padding:56px 0 32px}
+  .title{font-size:clamp(32px,6vw,56px);line-height:1.15;margin:0 0 14px;color:var(--primary-ink);font-weight:800;letter-spacing:.01em}
+  .lead{color:var(--muted);margin:0 0 18px;font-size:clamp(16px,2.6vw,18px)}
+  .feature{color:#444;font-weight:600;margin:0 0 12px}
+  .bullets{color:#444;margin:10px 0 0;padding-left:1em}
+  .bullets li{margin:6px 0}
+  .cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+  .btn{padding:12px 18px;border:1px solid var(--line);border-radius:999px;background:#fff;font-weight:700}
+  .btn-primary{background:var(--primary);border-color:var(--primary);color:#fff}
+  .btn:hover{box-shadow:0 6px 16px rgba(0,0,0,.06);transform:translateY(-1px)}
+  section{padding:28px 0}
+  .section-title{font-size:22px;margin:0 0 12px;color:var(--primary-ink);letter-spacing:.02em}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+  .menu{list-style:none;padding:0;margin:0}
+  .menu li{padding:10px 0;border-bottom:1px dashed var(--line);font-weight:700}
+  .note{color:var(--muted);font-size:14px;margin-top:8px}
+  footer{border-top:1px solid var(--line);padding:18px 0 40px;color:var(--muted);text-align:center;font-size:13px}
+  @media (max-width:900px){ .grid{grid-template-columns:1fr} }
+</style>
 </head>
 <body>
-  <h1>Hana beauty salon</h1>
-  <p>明日からまた前向きになれる。<br>そんなきっかけをつくれる場所。</p>
-  <p>ハーブピーリング / ヘッドスパ / 髪質改善トリートメント / マツエク</p>
-  <p>📍下北沢駅・世田谷代田駅 徒歩5分<br>📲 ご予約はLINE・Instagramから</p>
+<header>
+  <div class="nav">
+    <div class="brand">Hana beauty salon</div>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#reserve">Reserve</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero">
+    <h1 id="hero" class="title">自宅プライベートサロンで、<br>心までほぐれるケアを。</h1>
+    <p class="lead">明日からまた前向きになれる。そんなきっかけをつくれる場所。</p>
+    <p class="feature">REVI剥けないハーブピーリング／マツエク／ドライヘッドスパ</p>
+    <ul class="bullets">
+      <li>📍 下北沢駅・世田谷代田駅 徒歩5分（ちょうど間の <strong>BONUS TRACK</strong> すぐそば）</li>
+      <li>🕒 営業時間：お客様に合わせて調整します</li>
+      <li>💳 お支払い：現金・PayPay</li>
+    </ul>
+    <div class="cta">
+      <a class="btn btn-primary" href="https://lin.ee/wpdFH02" target="_blank" rel="noopener">LINEで予約</a>
+      <a class="btn" href="https://www.instagram.com/shimokita_harb?igsh=b24zbjBldjdhbTc5&utm_source=qr" target="_blank" rel="noopener">Instagramを見る</a>
+      <a class="btn" href="#menu">メニューを見る</a>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section id="menu" aria-labelledby="menu-title">
+    <h2 id="menu-title" class="section-title">メニュー</h2>
+    <div class="card">
+      <ul class="menu">
+        <li>REVI剥けないハーブピーリング</li>
+        <li>マツエク</li>
+        <li>ドライヘッドスパ</li>
+      </ul>
+      <p class="note">※料金は現在調整中です。最新情報はLINEまたはInstagramでご案内します。</p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" aria-labelledby="about-title">
+    <h2 id="about-title" class="section-title">サロンについて</h2>
+    <div class="grid">
+      <div class="card">
+        <p><strong>コンセプト</strong></p>
+        <p class="note">明日からまた前向きになれる。そんなきっかけをつくれる場所。</p>
+      </div>
+      <div class="card">
+        <p><strong>アクセス</strong></p>
+        <p class="note">下北沢駅・世田谷代田駅から徒歩5分。<br>2駅のちょうど間にある <strong>BONUS TRACK</strong> のすぐそばです。<br>住所は予約確定後にお知らせします。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVE -->
+  <section id="reserve" aria-labelledby="reserve-title">
+    <h2 id="reserve-title" class="section-title">予約・お問い合わせ</h2>
+    <div class="card" style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between">
+      <p class="note" style="margin:0">LINEまたはInstagramのDMから承ります。</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="https://lin.ee/wpdFH02" target="_blank" rel="noopener">LINEで予約</a>
+        <a class="btn" href="https://www.instagram.com/shimokita_harb?igsh=b24zbjBldjdhbTc5&utm_source=qr" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div>© <span id="y"></span> Hana beauty salon</div>
+</footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
 </body>
 </html>
